@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+	<title>music</title>
+</head>
+
+<style>
+	img{width: 400px; height: 400px; margin-left: 100px; margin-top: 50px;}
+		.thum{ opacity: 0.3; }
+	.thum:hover{opacity: 1; transition: 1s;}
+
+	h2,h3,p{color: #F2F2F2;}
+
+
+
+
+</style>
+<body style="background-color: #151515">
+	<h2 style="margin-left: 450px; margin-bottom: 0px; color: white;" >무엇이 무엇이 똑같을까?</h2>
+	<h3 style="margin-left: 480px; margin-top: 10px; ">-표절논란곡 비교해보기</h3>
+
+	<div>
+		<img src="1.jpg" class="thum" id="b">
+		<audio src="Cut_1.mp3" loop id="bs"></audio>
+		
+
+		<img src="2.jpg" class="thum" id="c">
+		<audio src="Cut_2.mp3" loop id="cs"></audio>
+		<p style="margin-left: 450px;">아이유 - 분홍신 / Necta - Here's us</p>
+	</div>
+
+
+	<div>
+
+		<img src="3.jpg" class="thum" id="d">
+		<audio src="Cut_3.mp3" loop id="ds"></audio>
+		
+
+		<img src="4.png" class="thum" id="e">
+		<audio src="Cut_4.mp3" loop id="es"></audio>
+
+		<p style="margin-left: 400px;">선미 - 주인공 / Cheryl Cole - Fight For This Love</p>
+
+
+	</div>
+
+
+	<div>
+
+		<img src="5.jpg" class="thum" id="f">
+		<audio src="Cut_5.mp3" loop id="fs"></audio>
+
+		<img src="6.jpg" class="thum" id="g">
+		<audio src="Cut_6.mp3" loop id="gs"></audio>
+
+		<p style="margin-left: 400px;">G.dragon - Butterfly / oasis - She's Electric</p>
+
+
+
+	</div>
+
+	<p style="font-size: 9pt; margin-top: 150px; margin-left: 380px;">모든곡의 저작권은 원작자에게 있습니다. ⓒ2019 HKNU.YOHAN LIM</p>
+
+
+	<script type="text/javascript">
+		 
+		var bstate = "off";
+		b.onclick=function(){
+			if(bstate == "off"){
+			b.style.opacity="1";
+			b.style.borderRadius="50%";
+			bs.play();
+			bs.volume = 0.7;
+			bstate = "on";
+		}else{
+			b.style.opacity="0.3";
+			b.style.borderRadius="0%";
+			bs.pause();
+			bstate = "off";
+		}
+	}
+
+		var cstate = "off";
+		c.onclick=function(){
+			if(cstate == "off"){
+			c.style.opacity="1";
+			c.style.borderRadius="50%";
+			cs.play();
+			cstate = "on";
+			
+		}else{
+			c.style.opacity="0.3";
+			c.style.borderRadius="0%";
+			cs.pause();
+
+			cstate = "off";
+		}
+	}
+
+		var dstate = "off";
+		d.onclick=function(){
+			if(dstate == "off"){
+			d.style.opacity="1";
+			d.style.borderRadius="50%";
+			ds.play();
+			ds.volume = 0.6;
+			dstate = "on";
+		}else{
+			d.style.opacity="0.3";
+			d.style.borderRadius="0%";
+			ds.pause();
+			dstate = "off";
+		}
+	}
+
+		var estate = "off";
+		e.onclick=function(){
+			if(estate == "off"){
+			e.style.opacity="1";
+			e.style.borderRadius="50%";
+			es.play();
+			estate = "on";
+		}else{
+			e.style.opacity="0.3";
+			e.style.borderRadius="0%";
+			es.pause();
+			estate = "off";
+		}
+	}
+		var fstate = "off";
+		f.onclick=function(){
+			if(fstate == "off"){
+			f.style.opacity="1";
+			f.style.borderRadius="50%";
+			fs.play();
+			fstate = "on";
+		}else{
+			f.style.opacity="0.3";
+			f.style.borderRadius="0%";
+			fs.pause();
+			fstate = "off";
+		}
+	}
+		var gstate = "off";
+		g.onclick=function(){
+			if(gstate == "off"){
+			g.style.opacity="1";
+			g.style.borderRadius="50%";
+			gs.play();
+			gstate = "on";
+		}else{
+			g.style.opacity="0.3";
+			g.style.borderRadius="0%";
+			gs.pause();
+			gstate = "off";
+		}
+	}
+
+
+	</script>
+</body>
+</html>
